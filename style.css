@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(LemonMilk.otf); 
+}
+
+:root {
+    --main-color: #000;
+    --second-color: rgb(240, 235, 235);
+    --link-color: #ff7c61;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font: 400 100px 'LemonMilk';
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 30px
+}
+
+.background-image {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 3px 35px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    margin-right: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--second-color);
+    background-color: var(--main-color);
+}
+
+.header-text {
+    padding: 0px 50px;
+    font: 300 20px 'LemonMilk';
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.header-link {
+    color: var(--main-color);
+    
+    cursor: pointer;
+}
+
+.header-link:hover {
+    font-size: 25px;
+    color: var(--link-color);
+}
+
+.bold-text {
+    font: 600 30px 'LemonMilk'; 
+    margin: 20px 0px 20px 200px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.bold-text:hover {
+    color: var(--link-color);
+    cursor: pointer;
+}
+
