@@ -3,11 +3,14 @@
     src: url(LemonMilk.otf); 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 :root {
     --main-color: #000;
     --second-color: rgb(240, 235, 235);
     --link-color: #ff7c61;
     letter-spacing: 2px;
+    font: 400 18px 'Nanum Gothic';
 }
 
 h1 {
@@ -15,6 +18,16 @@ h1 {
     text-align: center;
     letter-spacing: 5px;
     margin: 30px
+}
+
+h2 {
+    font: 300 30px 'LemonMilk';
+    letter-spacing: 5px;
+    margin: 30px
+}
+
+.main-text {
+    padding: 0px 10px 0px 10px;
 }
 
 .background-image {
@@ -30,12 +43,13 @@ h1 {
 }
 
 .button {
-    padding: 3px 35px;
+    padding: 3px 15px;
     border: 2px solid var(--main-color);
     border-radius: 30px;
     margin-right: 5px;
     text-transform: uppercase;
     cursor: pointer;
+    margin: 0px;
 }
 
 .button:hover {
@@ -74,5 +88,49 @@ h1 {
 .bold-text:hover {
     color: var(--link-color);
     cursor: pointer;
+}
+
+/* TIMELINE SECTION */
+ #timeline-content {
+	 margin-top: 50px;
+	 text-align: center;
+}
+ .timeline {
+	 border-left: 4px solid var(--link-color);
+	 color: var(--main-color);
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+	 padding: 50px;
+	 list-style: none;
+	 text-align: left;
+}
+
+ .timeline .event { 
+     position: relative;
+}
+
+ .timeline .event:before, .timeline .event:after {
+	 position: absolute;
+	 top: 0;
+}
+
+ .timeline .event:after {
+	 box-shadow: 0 0 0 4px var(--link-color);
+	 left: -63px;
+	 background: white;
+	 border-radius: 50%;
+	 height: 21px;
+	 width: 21px;
+     content: "";
+ }
+     
+    .timeline .event:before {
+	 left: -130px;
+	 color: var(--main-color);
+	 content: attr(data-date);
+     text-align: right;
+     font: 300 20px 'LemonMilk';
+     
 }
 
