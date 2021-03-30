@@ -5,12 +5,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-color: #000;
     --second-color: rgb(240, 235, 235);
     --link-color: #ff7c61;
     letter-spacing: 2px;
     font: 400 18px 'Nanum Gothic';
+}
+
+body {
+    margin: 0px;
 }
 
 h1 {
@@ -30,11 +38,14 @@ h2 {
     padding: 0px 10px 0px 10px;
 }
 
-.background-image {
-    position: absolute;
-    width: 400px;
-    height: 400px;
+.backgrond-img {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     z-index: -1;
+    background-image: url('https://uploads-ssl.webflow.com/6016124b2f10f453a5b0770e/603476858e88e6f399aa42ff_red-circ.svg');
+    background-position: left;
+    background-size: 100%;
 }
 
 .nav-container {
@@ -43,18 +54,23 @@ h2 {
 }
 
 .button {
-    padding: 3px 15px;
+    padding: 2px 15px;
     border: 2px solid var(--main-color);
-    border-radius: 30px;
+    border-radius: 40px;
     margin-right: 5px;
     text-transform: uppercase;
     cursor: pointer;
     margin: 0px;
+    background-color: transparent;
 }
 
 .button:hover {
     color: var(--second-color);
     background-color: var(--main-color);
+}
+
+.button-text {
+    margin: 0px;
 }
 
 .header-text {
@@ -92,8 +108,8 @@ h2 {
 
 /* TIMELINE SECTION */
  #timeline-content {
-	 margin-top: 50px;
-	 text-align: center;
+    margin-top: 50px;
+	text-align: center;
 }
  .timeline {
 	 border-left: 4px solid var(--link-color);
@@ -103,11 +119,13 @@ h2 {
      width: 50%;
 	 padding: 50px;
 	 list-style: none;
-	 text-align: left;
+     text-align: left;
+     margin-bottom: 0px;
 }
 
  .timeline .event { 
      position: relative;
+     margin-bottom: 100px;
 }
 
  .timeline .event:before, .timeline .event:after {
@@ -131,6 +149,62 @@ h2 {
 	 content: attr(data-date);
      text-align: right;
      font: 300 20px 'LemonMilk';
-     
-}
+    }
+
+    .form-border {
+        border-top: 4px solid var(--link-color);
+    }
+
+    .form-container, .confirm-but-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .form-container {
+        padding: 40px 0px 20px;
+    }
+
+
+    .field {
+        display: grid;
+    }
+
+    label {
+        padding: 15px 10px;
+    }
+
+    input, textarea {
+        background-color: transparent;
+        color: var(--main-color);
+    }
+
+    input {
+        height: 30px;
+        border-radius: 50px;
+    }
+
+    textarea {
+        height: 200px;
+        border-radius: 30px;
+        margin: 10px 0px;
+    }
+
+    .confirm-button {
+        margin-bottom: 10px;
+    }
+
+    .fa-twitter {
+        color: var(--link-color);
+        font-size: 38px;
+        text-decoration: none;
+        margin: 0px;
+    }
+
+    @media(min-width: 800px) {
+        .nav-container {
+            padding: 10px 30px;
+        }
+    }
+
 

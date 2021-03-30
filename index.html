@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <title>Derek Sivers</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Derek Sivers</title>
 </head>
 
 <body>
-    <img class="background-image"
-        src="https://uploads-ssl.webflow.com/6016124b2f10f453a5b0770e/603476858e88e6f399aa42ff_red-circ.svg"
-        alt="backround image">
+    <div class="backgrond-img"></div>
     <div class="nav-container">
         <div class="nav-buttons">
             <div class="button">
@@ -44,7 +42,7 @@
     </div>
     <div class="header">
         <h1>Derek</h1>
-        <h1 style="padding-left: 300px;">Sivers</h1>
+        <h1 style="padding-left: 200px;">Sivers</h1>
         <p class="header-text">I’ve been a <a class="header-link" href="">musician</a>,producer, <a class="header-link"
                 href="">circus performer</a>
             <a class="header-link" href="">entrepreneur</a> <a class="header-link" href="">TED speaker</a>, and <a
@@ -55,47 +53,83 @@
 
         <p class="header-text" style="margin-left: 100px; font-size: 18px;">California native, I now live in New
             Zealand.</p>
-        <div class="scroll-down-container" onclick="window.scrollTo(0, 500)">
+        <div class="scroll-down-container" onclick="window.scrollTo(0, 700)">
             <p class="bold-text">See my “about” page<i class="fas fa-arrow-down down"></i></p>
         </div>
     </div>
     <div class="about-container">
         <h2>About:</h2>
-        <p class="main-text">I always write for my audience, not for myself, so this feels indulgent. When I think of expressing this kind of “about me” stuff in an article, I stop myself because it’s not directly useful to you.</p>
-        <p class="main-text">So this is just one big page where I can write all about myself, without feeling the need for it to be useful. And some day this site will be all that’s left of me, so I might as well write my own mini autobiography.</p>
+        <p class="main-text">I always write for my audience, not for myself, so this feels indulgent. When I think of
+            expressing this kind of “about me” stuff in an article, I stop myself because it’s not directly useful to
+            you.</p>
+        <p class="main-text">So this is just one big page where I can write all about myself, without feeling the need
+            for it to be useful. And some day this site will be all that’s left of me, so I might as well write my own
+            mini autobiography.</p>
     </div>
-    
+
     <!-- Timeline section -->
     <div id="timeline-content">
-      <h2>Time line for context:</h2>
+        <h2>Time line for context:</h2>
         <ul class="timeline">
-          <li class="event" data-date="1969">
-            <p>born in California</p>
-          </li>
-          <li class="event" data-date="1976">
-            <p>started playing piano, viola, and clarinet</p>    
-          </li>
-          <li class="event" id="date" data-date="2009">
-            <h3>Squareflair was Born</h3>
-            <p></p> <p>"We can be all things to Squarespace users!" 📣</p>    
-          </li>
-          
-          <li class="event" data-date="November 15, 2018">
-            
-            <h3>Squareflair Today</h3>
-            
-            <p>"We design and build from scratch!" 📣<p/> <p>When we say <em><strong>100% custom</strong></em> we mean it— and we build all sites on the Squarespace Developer platform.<p/>
-      <p>Did you know that all of our pixels are hand-forged from the rarest of subpixels grown and harvested in the <em>Nerd Forest</em>? <br>🤜💥🤛</p>
-            
-            <p><strong>Our success can be measured by lives and brands enhanced by 9+ years of 100% Squarespace-focused service!</strong></p>
-          </li>
+            <li class="event" data-date="1969">
+                <p class="main-text">born in California</p>
+            </li>
+            <li class="event" data-date="1996">
+                <p class="main-text">recorded and released my album</p>
+            </li>
+            <li class="event" data-date="1997">
+                <p class="main-text">started CD Baby</p>
+            </li>
+            <li class="event" data-date="1999">
+                <p class="main-text">started HostBaby</p>
+            </li>
+            <li class="event" data-date="2011">
+                <p class="main-text">published <a class="header-link" href="">“Anything You Want”</a> book about my CD
+                    Baby days, started Wood Egg</p>
+            </li>
         </ul>
-      </div>
+    </div>
 
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- CONTACT FORM -->
+<div class="form-border">
+    <div class="form-container">
+        <form>
+            <div class="field">
+                <label for="username">
+                    <i class="far fa-user"></i>Your Name
+                </label>
+                <input name="username" type="text" placeholder=" name" required>
+            </div>
+            <div class="field">
+                <label for="email">
+                    <i class="far fa-envelope"></i>Your Email
+                </label>
+                <input name="email" type="text" placeholder=" email@domain.com" required>
+            </div>
+            <div class="field">
+                <label for="message">
+                    <i class="far fa-edit"></i>Your Message
+                </label>
+                <textarea name="message" placeholder="  type here" required></textarea>
+            </div>
+            <div class="confirm-but-container">
+             <button class="button confirm-button">Send Me Message</button>
+            </div>
+             <div class="social-media">
+                <span class="bold-text">
+                    Get In Touch<i class="fas fa-long-arrow-alt-right"></i>
+                </span>
+                <a class="fab fa-twitter"
+                    href="https://twitter.com/sivers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="blank_"></a>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="index.js"></script>
 </body>
 
