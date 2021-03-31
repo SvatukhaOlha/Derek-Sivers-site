@@ -35,7 +35,7 @@ h2 {
 }
 
 .main-text {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px;
 }
 
 .backgrond-img {
@@ -44,8 +44,9 @@ h2 {
     position: fixed;
     z-index: -1;
     background-image: url('https://uploads-ssl.webflow.com/6016124b2f10f453a5b0770e/603476858e88e6f399aa42ff_red-circ.svg');
-    background-position: left;
+    background-position: center;
     background-size: 100%;
+    padding-left: -300px;
 }
 
 .nav-container {
@@ -82,13 +83,11 @@ h2 {
 
 .header-link {
     color: var(--main-color);
-    
     cursor: pointer;
 }
 
 .header-link:hover {
-    font-size: 25px;
-    color: var(--link-color);
+    font-size: 45px;
 }
 
 .bold-text {
@@ -102,7 +101,7 @@ h2 {
 }
 
 .bold-text:hover {
-    color: var(--link-color);
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -165,7 +164,6 @@ h2 {
         padding: 40px 0px 20px;
     }
 
-
     .field {
         display: grid;
     }
@@ -203,7 +201,79 @@ h2 {
 
     @media(min-width: 800px) {
         .nav-container {
-            padding: 10px 30px;
+            padding: 10px 20px;
+        }
+
+        .button {
+            padding: 3px 25px;
+        }
+    }
+
+    @media(min-width: 895px) {
+        .button {
+            padding: 3px 35px;
+        }
+
+        .main-text {
+            padding: 0px 50px;
+        }
+
+        .social-media {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+    }
+
+    @media(min-width: 1000px) {
+        .nav-container {
+            padding: 10px 50px;
+        }
+
+        .social-media {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+    }
+
+    @media(min-width: 1090px) {
+        .button {
+            padding: 5px 45px;
+        }
+    }
+
+    @media(min-width: 1275px) {
+        .button {
+            padding: 7px 55px;
+        }
+
+        .button-text {
+            font-size: 21px;
+        }
+
+        h1 {
+            margin: 70px 500px;
+        }
+
+        .main-text {
+            font-size: 28px;
+        }
+
+        .social-media {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .backgrond-img {
+            padding: 600px;
+            background-position: right;
+    
+        }
+
+        .confirm-button {
+            font-size: 18px;
         }
     }
 
